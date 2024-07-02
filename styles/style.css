@@ -214,7 +214,7 @@ font-size: 14px;
 /*******FOOTER*******/
 
 .footer {
-    background-color:rgb(200, 176, 223);
+    background-color:rgb(180, 177, 216);
             color: white;
             text-align: center;
             padding: 10px 0;
@@ -222,6 +222,48 @@ font-size: 14px;
             bottom: 0;
             width: 100%;
 }
+
+.footer-content {
+    background-color: rgb(180, 177, 216);
+    padding-bottom: .5rem 3rem;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.content-h {
+    text-decoration-color: black;
+    align-items: center;
+    text-align: center;
+}
+
+.content-p {
+    text-align: justify-all;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: middle;
+}
+    
+
+.column-content {
+    align-items: center;
+    padding: 0%;
+    list-style-type: none;
+}
+
+.icono-ig {
+   font-size: 44px;
+   color: black;
+
+}
+
+ .card-body {
+    background-color: rgb(180, 177, 216);
+    text-align:center;
+
+ }
+
 
 /**formulario**/
 
