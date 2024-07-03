@@ -1,34 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!--link bootstrap-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+   <!---link a estilos personales--->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="icon" type="image/jpg" href="/img/logo2.jpg">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <title>Armonia</title>
+
+    <!---link para iconos-->
+    <script src="https://kit.fontawesome.com/3f6537933c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <hr>
-     <header class="header">
-        <img class="logo" src="/img/logo2.jpg" alt="logo">
-
-        <nav class="nav">
-            <ul class="menu">
-                <li class="menu__item active">
-                    <a class="menu-link" href="../index.html">Inicio</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu-link" href="./quiensoy.html">Quien soy</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu-link" href="./productos.html">Productos</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu-link" href="/servicios.html">Servicios</a>
-                </li>
-            </ul>
-        </nav>
+    <script type="module" src=".js/bootstrap.min.js"></script>
+    <div class="container-div">
+    <header class="header">
+        <a href="./index.html">
+        <img class="logo" src="./img/logo2.jpg" alt="logo">
+        </a>
+        <nav class="navbar navbar-expand-lg bg-purple-200">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">ARMONÍA TIENDA</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./deco.html">Deco</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  
+                </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
@@ -37,52 +53,133 @@
             <h2 class="productos-1">Encontrá tu planta ideal y mucho más</h2>
         </article>
 
-        <section class="tarjetas-productos">
-            <article class="productos">
-                <div class="productos-div" style="width: 100%;">
-                <img src="./img/plant1.jpg" alt="imagen" class="tarjeta-imagen">
-                <h4 class="tarjeta-titulo">Potus lemon</h4>
-                <p class="tarjeta-parrafo">Potus Limón (o Potus Lemon). Planta purificadora del aire, perfecta para principiantes. Es una de las variedades más divertidas y distintivas de la familia de los potus. Sus hojas color verde amarillento muy claras u brillantes no pasan desapercibidas, por eso también se la conoce como Potus Neón. Para mantener ese tono hay que poner la planta en puntos luminosos, por lo contrario el color se apagará y oscurecerá.</p>
-            </div>
-            </article>
+        <section class="container">
+            <div class="row mt-5">
 
-            <article class="productos">
-                <div class="productos-div" style="width: 100%;"></div>
-                <img src="./img/plant3.jpg" alt="imagen" class="tarjeta-imagen">
-                <h4 class="tarjeta-titulo">Fittonia</h4>
-                <p class="tarjeta-parrafo"> Una planta pequeña y muy llamativa ideal para ese rincón que te faltaba iluminar.
-                Hay que entenderla, es una planta tropical y como se vendrán dando cuenta, les gusta húmedo pero no encharcado.
-                Siempre es preferible que la tierra se seque un poco y no que esté todo el tiempo mojada.
-                Un plus, no es tóxica para animales.</p>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                    <img src="./img/plant1.jpg" class="card-img-top" alt="imagen">
+                    <div class="card-body">
+                      <h5 class="card-title">POTUS LEMON</h5>
+                      <p class="card-text">Potus Limón (o Potus Lemon). Planta purificadora del aire, perfecta para principiantes. Es una de las variedades más divertidas y distintivas de la familia de los potus. Sus hojas color verde amarillento muy claras u brillantes no pasan desapercibidas, por eso también se la conoce como Potus Neón. Para mantener ese tono hay que poner la planta en puntos luminosos, por lo contrario el color se apagará y oscurecerá.</p>
+                    </div>
+                  </div>
                 </div>
-                </article>
 
-            <article class="productos">
-                <div class="productos-div" style="width: 100%;"></div>
-                <img src="./img/plant5.jpg" alt="imagen" class="tarjeta-imagen">
-                <h4 class="tarjeta-titulo">Philodendron</h4>
-                <p class="tarjeta-parrafo">Realmente es una planta que se siente muy a gusto con nuestros climas ya que, como habrás visto en su nombre, es una especie originaria del este de Sudamerica: Brasil, Bolivia, Paraguay y Argentina.
-                Si lo queremos tener en el interior de nuestras casas o departamentos, nos tenemos que asegurar de tener un espacio bien luminoso para su ubicación asegurándonos que en ningún momento el sol le pegue en forma directa a sus hojas.
-                Si tenemos la posibilidad de tenerla directamente en suelo en un jardín, no va a dejar de crecer, siempre y cuando nos aseguremos de ubicarla en un lugar que esté siempre al reparo de los rayos del sol.</p>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                    <img src="./img/plant3.jpg" class="card-img-top" alt="imagen">
+                    <div class="card-body">
+                      <h5 class="card-title">FITTONIA</h5>
+                      <p class="card-text"> Una planta pequeña y muy llamativa ideal para ese rincón que te faltaba iluminar.
+                        Hay que entenderla, es una planta tropical y como se vendrán dando cuenta, les gusta húmedo pero no encharcado.
+                        Siempre es preferible que la tierra se seque un poco y no que esté todo el tiempo mojada.
+                        Un plus, no es tóxica para animales.</p>
+                    </div>
+                  </div>
                 </div>
-                </article>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                    <img src="./img/plant5.jpg" class="card-img-top" alt="imagen">
+                    <div class="card-body">
+                      <h5 class="card-title">PHILODENDRON</h5>
+                      <p class="card-text">Realmente es una planta que se siente muy a gusto con nuestros climas ya que, como habrás visto en su nombre, es una especie originaria del este de Sudamerica: Brasil, Bolivia, Paraguay y Argentina.
+                        Si lo queremos tener en el interior de nuestras casas o departamentos, nos tenemos que asegurar de tener un espacio bien luminoso para su ubicación asegurándonos que en ningún momento el sol le pegue en forma directa a sus hojas.
+                        Si tenemos la posibilidad de tenerla directamente en suelo en un jardín, no va a dejar de crecer, siempre y cuando nos aseguremos de ubicarla en un lugar que esté siempre al reparo de los rayos del sol.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                    <img src="./img/plant8.jpg" class="card-img-top" alt="imagen">
+                    <div class="card-body">
+                      <h5 class="card-title">HEMIGRAPHIS</h5>
+                      <p class="card-text">La Hemigraphis, originaria de Asia, es una planta exótica y vibrante que agrega color y alegría a cualquier espacio. Descubre cómo cuidar y disfrutar de esta fascinante planta en tu hogar.
+                        La Hemigraphis prefiere luz brillante indirecta. Colócala en un lugar donde reciba luz filtrada, como cerca de una ventana orientada al este o al oeste. Evita la luz solar directa intensa, ya que puede quemar las hojas.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                    <img src="./img/plant13.jpg" class="card-img-top" alt="imagen">
+                    <div class="card-body">
+                      <h5 class="card-title">AGLAONEMA</h5>
+                      <p class="card-text">Es la planta perfecta para quienes quieran disfrutar de naturaleza tropical frondosa y llamativa. Más allá de su atractivo, los cuidados de la aglaonema hacen de ella la planta ideal para muchos hogares. A pesar de las apariencias, no es excesivamente exigente en lo que respecta a la luz. Un detalle que la convierte en una opción ideal para interiores que no disponen de buena luz solar. Es más: su resistencia es tal que podemos incluso cultivarla únicamente con luz artificial. La opción perfecta para quienes se ven forzados a renunciar a las plantas de interior por vivir en una casa poco iluminada.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100">
+                    <img src="./img/plant11.jpg" class="card-img-top" alt="imagen">
+                    <div class="card-body">
+                      <h5 class="card-title">FICUS ELASTICA RUBY</h5>
+                      <p class="card-text">El Ficus Elastica es una de las plantas de interior apta para todos los públicos. Requiere muy poca atención, puede sobrevivir en sitios poco iluminados y para colmo ¡purifica el aire!.
+                        Originario de las selvas tropicales de Asia, el Ficus Elastica es una planta de cultivo exterior que se adapta a la perfección a espacios interiores. También puedes encontrarlo con varios nombres comunes: árbol de Caucho, árbol de goma, árbol de hoja grande…
+                        El Ficus Elastica Ruby es una variedad que posee también un tallo central del que salen unas grandes hojas ovaladas. Éstas, en lugar de ser de color verde oscuro, combinan el verde con zonas rosas cuando nacen, tornándose blancas con el paso del tiempo. Me encanta ubicada junto a otras plantas de hojas verdes (incluso con su “primo” el ficus lyrata).
+                      </p>
+                    </div>
+                  </div>
+                </div>
                 
-            <article class="productos">
-                <div class="productos-div" style="width: 100%;">
-                <img src="./img/plant8.jpg" alt="imagen" class="tarjeta-imagen">
-                <h4 class="tarjeta-titulo">Hemigraphis</h4>
-                <p class="tarjeta-parrafo">La Hemigraphis, originaria de Asia, es una planta exótica y vibrante que agrega color y alegría a cualquier espacio. Descubre cómo cuidar y disfrutar de esta fascinante planta en tu hogar.
-                La Hemigraphis prefiere luz brillante indirecta. Colócala en un lugar donde reciba luz filtrada, como cerca de una ventana orientada al este o al oeste. Evita la luz solar directa intensa, ya que puede quemar las hojas.</p>
-                </div>
-                </article>
-            </section>
 
-                       
+            
+
+            
+                
+        
+
     </main>
-    <hr>
-    <footer class="footer">
-        <a href="#menu">Ir al pie de pagina</a>
-        <a href="https://www.instagram.com/armonia.tienda/" target="_blank">Seguinos en instagram</a>
-    </footer>
+
+    <footer class="footer-content" class="bg-light text-dark pt-5 pb-4">
+        <div class="column-content" class="container text-center text-md-start">
+        <div class="row text-center text-md-start">
+  
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="content-h" class="text-uppercase mb-4 font-weight-bold text-primary">CONTACTO</h5>
+            <hr class="mb-4">
+            <p> 
+              <i class="fa-solid fa-house"></i> Tucuman 1153
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i> armonia.tienda@gmail.com
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i> +5493416254785
+            </p>
+            <p>
+              <i class="fa-solid fa-earth-americas"></i> Rosario, Santa fe
+            </p>
+              
+           </div>
+  
+           <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <ul class="redes-sociales">
+              <a href="https://www.instagram.com/armonia.tienda/" target="_blank">
+            <i class="fa-brands fa-instagram icono-ig" ></i>
+              </a>
+            </ul>
+             
+             </div>
+          
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="content-h" class="text-uppercase mb-4 font-weight-bold text-primary">HORARIOS</h5>
+            <hr class="mb-4">
+            <p class="content-p">Lunes a Viernes 9:00 a 13:00hs y de 16:00 a 20:00hs
+                                Sábados 9:00 a 13:00hs</p>
+          </div>
+         </div>
+        </div>
+          
+  
+          </section>
+          
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+
+   
 </body>
 </html>
