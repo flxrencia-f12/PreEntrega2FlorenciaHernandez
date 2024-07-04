@@ -128,60 +128,6 @@
     text-align: center;
     border-radius: 8px;
 }
- 
-/****TARJETAS PRODUCTOS****/
-
-.tarjetas-productos {
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-    flex-direction: nowrap;
-    margin-top: 2rem;
-    
-}
-
-.productos {
-    background-color: whitesmoke;
-    flex-direction: row;
-    gap: 2rem;
-    flex-basis: auto;
-    flex-grow: 1;
-    flex-shrink: 1;
-    align-items: stretch;
-    overflow: scroll;
-    
-    
-    }
-
-.productos-titulo {
-    padding: 2rem;
-    align-items: center;
-}
-
-.productos-div {
-    border: 10px;
-    width: 300px;
-    padding: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.input {
-    width: 100%;
-}
-
-.productos {
-    flex: 1;
-    background-color: rgb(180, 177, 216);
-    padding: 1rem;
-    border-radius: .5rem;
-    flex-shrink: 1;
-    flex-basis: 100%;
-    flex-grow: 0;
-
-    
-}
 
 
 
